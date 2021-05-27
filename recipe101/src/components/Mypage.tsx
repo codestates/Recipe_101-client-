@@ -7,6 +7,7 @@ function Mypage() {
   console.log(typeof dummytoken, dummytoken);
   return (
     <div>
+      마이페이지입니다
       <div>{"dummy token :" + dummytoken}</div>
       <div>{"is login :" + `${user.isLogin}`}</div>
       <div>{"user info :" + `${user.userInfo}`}</div>
