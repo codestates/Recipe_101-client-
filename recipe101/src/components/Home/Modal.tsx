@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Route, Switch, useLocation } from "react-router-dom";
 import Login from "./Login";
-import Resister from "./Resister";
+import Register from "./Resigter";
 
 const Frame = styled.div`
   height: 100vh;
@@ -24,26 +24,26 @@ function Modal() {
         <Route path={"/recipe/:id/login"}>
           <Login></Login>
         </Route>
-        <Route path={"/recipe/:id/resister"}>
-          <Resister></Resister>
+        <Route path={"/recipe/:id/register"}>
+          <Register></Register>
         </Route>
         <Route path={"/search/:id/login"}>
           <Login></Login>
         </Route>
-        <Route path={"/search/:id/resister"}>
-          <Resister></Resister>
+        <Route path={"/search/:id/register"}>
+          <Register></Register>
         </Route>
         <Route path={"/search/login"}>
           <Login></Login>
         </Route>
-        <Route path={"/search/resister"}>
-          <Resister></Resister>
+        <Route path={"/search/register"}>
+          <Register></Register>
         </Route>
         <Route path={"/login"}>
           <Login></Login>
         </Route>
-        <Route path={"/resister"}>
-          <Resister></Resister>
+        <Route path={"/register"}>
+          <Register></Register>
         </Route>
       </Switch>
     </Frame>
